@@ -10,7 +10,7 @@ export default ({
   name: 'home',
   methods: {
     async login () {
-      await this.$auth.signInWithRedirect({ originalUri: '/' , nonce: null})
+      await this.$auth.signInWithRedirect({ originalUri: '/'})
     },
     async logout () {
       await this.$auth.signOut()
